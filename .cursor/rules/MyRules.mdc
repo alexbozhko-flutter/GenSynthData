@@ -1,0 +1,10 @@
+---
+description: Force English language for all AI‑generated Git commit messages
+globs: ["**/COMMIT_EDITMSG"]   # подключать только к буферу коммита
+alwaysApply: false
+---
+When generating a Git commit message:
+* **Write in English (US).**
+* Use the imperative mood: “Add feature”, “Fix bug”.
+* Limit the subject line to ≤ 72 characters.
+* If a body is needed, add a blank line after the title and wrap at 72 chars.
