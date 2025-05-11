@@ -1,0 +1,6 @@
+2025-05-10 01:15:56,334 - INFO - Starting product types export process
+2025-05-10 01:15:56,369 - INFO - Database connection established
+2025-05-10 01:15:57,045 - ERROR - Fatal error in main: (psycopg2.OperationalError) connection to server at "188.165.228.146", port 5441 failed: FATAL:  password authentication failed for user "latest"
+connection to server at "188.165.228.146", port 5441 failed: FATAL:  password authentication failed for user "latest"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)

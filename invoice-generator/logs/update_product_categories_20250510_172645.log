@@ -1,0 +1,5 @@
+2025-05-10 17:26:45,074 - INFO - Starting product categories update process
+2025-05-10 17:26:45,110 - INFO - Database connection established
+2025-05-10 17:26:46,112 - INFO - Connected to PostgreSQL: ('PostgreSQL 17.4 (Ubuntu 17.4-1.pgdg24.04+2) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit',)
+2025-05-10 17:26:46,112 - ERROR - Input file not found: /Users/alexbozhko/CursorProject/GenSynthData/GenSynthData/invoice-generator/data/product_types_separated
+2025-05-10 17:26:46,161 - ERROR - Fatal error in main: Input file not found: /Users/alexbozhko/CursorProject/GenSynthData/GenSynthData/invoice-generator/data/product_types_separated

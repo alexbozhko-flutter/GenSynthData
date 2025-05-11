@@ -1,0 +1,47 @@
+2025-05-10 17:27:39,604 - INFO - Starting product categories update process
+2025-05-10 17:27:39,640 - INFO - Database connection established
+2025-05-10 17:27:40,500 - INFO - Connected to PostgreSQL: ('PostgreSQL 17.4 (Ubuntu 17.4-1.pgdg24.04+2) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit',)
+2025-05-10 17:27:40,501 - INFO - Starting to read categories from /Users/alexbozhko/CursorProject/GenSynthData/GenSynthData/invoice-generator/data/product_types_separated.txt
+2025-05-10 17:27:40,503 - INFO - Finished reading categories:
+2025-05-10 17:27:40,503 - INFO - - Total lines processed: 2205
+2025-05-10 17:27:40,503 - INFO - - Valid categories found: 2205
+2025-05-10 17:27:40,503 - INFO - - Invalid lines: 0
+2025-05-10 17:27:40,503 - INFO - Loaded 2205 categories from file
+2025-05-10 17:27:40,503 - INFO - Starting categories update process
+2025-05-10 17:27:40,550 - INFO - Updated record 25: Фоторамка
+2025-05-10 17:27:40,596 - INFO - Updated record 26: Фоторамка
+2025-05-10 17:27:40,642 - INFO - Updated record 27: Салатниця
+2025-05-10 17:27:40,689 - INFO - Updated record 28: Тарілка
+2025-05-10 17:27:40,735 - INFO - Updated record 29: Чайник
+2025-05-10 17:27:45,118 - INFO - Progress: 100/2205 records updated (4.5%)
+2025-05-10 17:27:49,742 - INFO - Progress: 200/2205 records updated (9.1%)
+2025-05-10 17:27:54,382 - INFO - Progress: 300/2205 records updated (13.6%)
+2025-05-10 17:27:59,001 - INFO - Progress: 400/2205 records updated (18.1%)
+2025-05-10 17:28:03,644 - INFO - Progress: 500/2205 records updated (22.7%)
+2025-05-10 17:28:08,269 - INFO - Progress: 600/2205 records updated (27.2%)
+2025-05-10 17:28:12,886 - INFO - Progress: 700/2205 records updated (31.7%)
+2025-05-10 17:28:17,505 - INFO - Progress: 800/2205 records updated (36.3%)
+2025-05-10 17:28:22,203 - INFO - Progress: 900/2205 records updated (40.8%)
+2025-05-10 17:28:26,852 - INFO - Progress: 1000/2205 records updated (45.4%)
+2025-05-10 17:28:31,466 - INFO - Progress: 1100/2205 records updated (49.9%)
+2025-05-10 17:28:36,094 - INFO - Progress: 1200/2205 records updated (54.4%)
+2025-05-10 17:28:40,707 - INFO - Progress: 1300/2205 records updated (59.0%)
+2025-05-10 17:28:45,338 - INFO - Progress: 1400/2205 records updated (63.5%)
+2025-05-10 17:28:49,955 - INFO - Progress: 1500/2205 records updated (68.0%)
+2025-05-10 17:28:54,572 - INFO - Progress: 1600/2205 records updated (72.6%)
+2025-05-10 17:28:59,186 - INFO - Progress: 1700/2205 records updated (77.1%)
+2025-05-10 17:29:03,824 - INFO - Progress: 1800/2205 records updated (81.6%)
+2025-05-10 17:29:08,518 - INFO - Progress: 1900/2205 records updated (86.2%)
+2025-05-10 17:29:13,153 - INFO - Progress: 2000/2205 records updated (90.7%)
+2025-05-10 17:29:17,973 - INFO - Progress: 2100/2205 records updated (95.2%)
+2025-05-10 17:29:22,592 - INFO - Progress: 2200/2205 records updated (99.8%)
+2025-05-10 17:29:22,823 - INFO - 
+Update completed. Statistics:
+2025-05-10 17:29:22,823 - INFO - - Total categories to process: 2205
+2025-05-10 17:29:22,823 - INFO - - Successfully updated: 2205
+2025-05-10 17:29:22,823 - INFO - - Skipped (not found): 0
+2025-05-10 17:29:22,823 - INFO - - Errors: 0
+2025-05-10 17:29:22,823 - INFO - 
+Verifying updates...
+2025-05-10 17:29:22,874 - INFO - Records with non-null base_name: 2205
+2025-05-10 17:29:22,921 - INFO - Update process completed successfully

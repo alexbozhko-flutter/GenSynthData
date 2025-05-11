@@ -1,0 +1,310 @@
+2025-05-10 20:04:21,943 - INFO - Starting product attribute values insertion process
+2025-05-10 20:04:21,978 - INFO - Database connection established
+2025-05-10 20:04:22,918 - INFO - Connected to PostgreSQL: ('PostgreSQL 17.4 (Ubuntu 17.4-1.pgdg24.04+2) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit',)
+2025-05-10 20:04:22,918 - INFO - Loading attribute name to ID mapping...
+2025-05-10 20:04:22,968 - INFO - Loaded 10 attribute mappings
+2025-05-10 20:04:22,968 - INFO - Starting to process product types from /Users/alexbozhko/CursorProject/GenSynthData/GenSynthData/invoice-generator/data/product_types_separated.txt
+2025-05-10 20:04:23,171 - WARNING - Line 3: Invalid format - not enough parts
+2025-05-10 20:04:24,320 - WARNING - Line 6: Invalid format - not enough parts
+2025-05-10 20:04:24,320 - WARNING - Line 7: Invalid format - not enough parts
+2025-05-10 20:04:24,763 - WARNING - Line 10: Invalid format - not enough parts
+2025-05-10 20:04:29,702 - WARNING - Line 33: Invalid format - not enough parts
+2025-05-10 20:04:30,354 - WARNING - Line 38: Invalid format - not enough parts
+2025-05-10 20:04:30,355 - WARNING - Line 39: Invalid format - not enough parts
+2025-05-10 20:04:31,819 - WARNING - Line 42: Invalid format - not enough parts
+2025-05-10 20:04:31,819 - WARNING - Line 43: Invalid format - not enough parts
+2025-05-10 20:04:31,819 - WARNING - Line 44: Invalid format - not enough parts
+2025-05-10 20:04:31,820 - WARNING - Line 45: Invalid format - not enough parts
+2025-05-10 20:04:31,820 - WARNING - Line 46: Invalid format - not enough parts
+2025-05-10 20:04:33,661 - WARNING - Line 53: Invalid format - not enough parts
+2025-05-10 20:04:36,308 - WARNING - Line 70: Invalid format - not enough parts
+2025-05-10 20:04:37,701 - WARNING - Line 78: Invalid format - not enough parts
+2025-05-10 20:04:39,242 - WARNING - Line 80: Invalid format - not enough parts
+2025-05-10 20:04:39,242 - WARNING - Line 81: Invalid format - not enough parts
+2025-05-10 20:05:07,277 - INFO - Progress: 100 lines processed
+2025-05-10 20:05:07,278 - INFO - - Products found: 788
+2025-05-10 20:05:07,278 - INFO - - Attributes inserted: 801
+2025-05-10 20:05:07,278 - INFO - - Errors: 0
+2025-05-10 20:05:24,375 - WARNING - Line 133: Invalid format - not enough parts
+2025-05-10 20:05:24,609 - WARNING - Line 135: Invalid format - not enough parts
+2025-05-10 20:05:25,605 - WARNING - Line 141: Invalid format - not enough parts
+2025-05-10 20:05:25,605 - WARNING - Line 142: Invalid format - not enough parts
+2025-05-10 20:05:30,376 - WARNING - Line 151: Invalid format - not enough parts
+2025-05-10 20:05:42,676 - WARNING - Line 171: Invalid format - not enough parts
+2025-05-10 20:05:43,639 - WARNING - Line 174: Invalid format - not enough parts
+2025-05-10 20:05:51,969 - INFO - Progress: 200 lines processed
+2025-05-10 20:05:51,970 - INFO - - Products found: 1369
+2025-05-10 20:05:51,970 - INFO - - Attributes inserted: 1447
+2025-05-10 20:05:51,970 - INFO - - Errors: 0
+2025-05-10 20:05:53,990 - WARNING - Line 208: Invalid format - not enough parts
+2025-05-10 20:06:09,403 - WARNING - Line 296: Invalid format - not enough parts
+2025-05-10 20:06:09,504 - WARNING - Line 298: Invalid format - not enough parts
+2025-05-10 20:06:09,704 - INFO - Progress: 300 lines processed
+2025-05-10 20:06:09,704 - INFO - - Products found: 1595
+2025-05-10 20:06:09,704 - INFO - - Attributes inserted: 1702
+2025-05-10 20:06:09,704 - INFO - - Errors: 0
+2025-05-10 20:06:16,823 - WARNING - Line 366: Invalid format - not enough parts
+2025-05-10 20:06:16,824 - WARNING - Line 367: Invalid format - not enough parts
+2025-05-10 20:06:16,824 - WARNING - Line 368: Invalid format - not enough parts
+2025-05-10 20:06:16,824 - WARNING - Line 369: Invalid format - not enough parts
+2025-05-10 20:06:16,824 - WARNING - Line 370: Invalid format - not enough parts
+2025-05-10 20:06:16,825 - WARNING - Line 371: Invalid format - not enough parts
+2025-05-10 20:06:16,825 - WARNING - Line 372: Invalid format - not enough parts
+2025-05-10 20:06:16,825 - WARNING - Line 373: Invalid format - not enough parts
+2025-05-10 20:06:16,825 - WARNING - Line 374: Invalid format - not enough parts
+2025-05-10 20:06:18,693 - WARNING - Line 382: Invalid format - not enough parts
+2025-05-10 20:06:20,929 - WARNING - Line 393: Invalid format - not enough parts
+2025-05-10 20:06:20,929 - WARNING - Line 394: Invalid format - not enough parts
+2025-05-10 20:06:20,929 - WARNING - Line 395: Invalid format - not enough parts
+2025-05-10 20:06:21,327 - WARNING - Line 397: Invalid format - not enough parts
+2025-05-10 20:06:21,327 - WARNING - Line 398: Invalid format - not enough parts
+2025-05-10 20:06:21,327 - WARNING - Line 399: Invalid format - not enough parts
+2025-05-10 20:06:21,327 - WARNING - Line 400: Invalid format - not enough parts
+2025-05-10 20:06:21,328 - WARNING - Line 401: Invalid format - not enough parts
+2025-05-10 20:06:21,328 - WARNING - Line 402: Invalid format - not enough parts
+2025-05-10 20:06:21,328 - WARNING - Line 403: Invalid format - not enough parts
+2025-05-10 20:06:21,328 - WARNING - Line 404: Invalid format - not enough parts
+2025-05-10 20:06:21,328 - WARNING - Line 405: Invalid format - not enough parts
+2025-05-10 20:06:21,328 - WARNING - Line 406: Invalid format - not enough parts
+2025-05-10 20:06:21,628 - WARNING - Line 410: Invalid format - not enough parts
+2025-05-10 20:06:21,628 - WARNING - Line 411: Invalid format - not enough parts
+2025-05-10 20:06:23,572 - WARNING - Line 424: Invalid format - not enough parts
+2025-05-10 20:06:25,957 - WARNING - Line 436: Invalid format - not enough parts
+2025-05-10 20:06:26,161 - WARNING - Line 438: Invalid format - not enough parts
+2025-05-10 20:06:26,910 - WARNING - Line 443: Invalid format - not enough parts
+2025-05-10 20:06:26,911 - WARNING - Line 444: Invalid format - not enough parts
+2025-05-10 20:06:28,260 - WARNING - Line 452: Invalid format - not enough parts
+2025-05-10 20:06:28,260 - WARNING - Line 453: Invalid format - not enough parts
+2025-05-10 20:06:36,073 - WARNING - Line 495: Invalid format - not enough parts
+2025-05-10 20:06:36,074 - WARNING - Line 496: Invalid format - not enough parts
+2025-05-10 20:06:36,373 - WARNING - Line 499: Invalid format - not enough parts
+2025-05-10 20:06:36,673 - INFO - Progress: 500 lines processed
+2025-05-10 20:06:36,674 - INFO - - Products found: 1894
+2025-05-10 20:06:36,674 - INFO - - Attributes inserted: 2071
+2025-05-10 20:06:36,674 - INFO - - Errors: 0
+2025-05-10 20:06:37,032 - WARNING - Line 504: Invalid format - not enough parts
+2025-05-10 20:06:38,590 - WARNING - Line 515: Invalid format - not enough parts
+2025-05-10 20:06:39,239 - WARNING - Line 521: Invalid format - not enough parts
+2025-05-10 20:06:39,540 - WARNING - Line 525: Invalid format - not enough parts
+2025-05-10 20:06:40,091 - WARNING - Line 531: Invalid format - not enough parts
+2025-05-10 20:06:41,189 - WARNING - Line 535: Invalid format - not enough parts
+2025-05-10 20:06:41,189 - WARNING - Line 536: Invalid format - not enough parts
+2025-05-10 20:06:41,389 - WARNING - Line 539: Invalid format - not enough parts
+2025-05-10 20:06:49,020 - INFO - Progress: 600 lines processed
+2025-05-10 20:06:49,021 - INFO - - Products found: 2010
+2025-05-10 20:06:49,021 - INFO - - Attributes inserted: 2224
+2025-05-10 20:06:49,021 - INFO - - Errors: 0
+2025-05-10 20:06:49,222 - WARNING - Line 602: Invalid format - not enough parts
+2025-05-10 20:06:51,002 - WARNING - Line 612: Invalid format - not enough parts
+2025-05-10 20:06:51,003 - WARNING - Line 613: Invalid format - not enough parts
+2025-05-10 20:06:51,252 - WARNING - Line 616: Invalid format - not enough parts
+2025-05-10 20:06:51,551 - WARNING - Line 618: Invalid format - not enough parts
+2025-05-10 20:06:51,902 - WARNING - Line 621: Invalid format - not enough parts
+2025-05-10 20:06:51,902 - WARNING - Line 622: Invalid format - not enough parts
+2025-05-10 20:06:51,902 - WARNING - Line 623: Invalid format - not enough parts
+2025-05-10 20:07:00,049 - INFO - Progress: 700 lines processed
+2025-05-10 20:07:00,049 - INFO - - Products found: 2127
+2025-05-10 20:07:00,049 - INFO - - Attributes inserted: 2349
+2025-05-10 20:07:00,049 - INFO - - Errors: 0
+2025-05-10 20:07:00,450 - WARNING - Line 705: Invalid format - not enough parts
+2025-05-10 20:07:00,450 - WARNING - Line 706: Invalid format - not enough parts
+2025-05-10 20:07:02,979 - WARNING - Line 731: Invalid format - not enough parts
+2025-05-10 20:07:03,280 - WARNING - Line 735: Invalid format - not enough parts
+2025-05-10 20:07:03,480 - WARNING - Line 737: Invalid format - not enough parts
+2025-05-10 20:07:03,480 - WARNING - Line 738: Invalid format - not enough parts
+2025-05-10 20:07:04,176 - WARNING - Line 741: Invalid format - not enough parts
+2025-05-10 20:07:05,076 - WARNING - Line 745: Invalid format - not enough parts
+2025-05-10 20:07:05,276 - WARNING - Line 748: Invalid format - not enough parts
+2025-05-10 20:07:05,577 - WARNING - Line 753: Invalid format - not enough parts
+2025-05-10 20:07:05,578 - WARNING - Line 754: Invalid format - not enough parts
+2025-05-10 20:07:05,578 - WARNING - Line 755: Invalid format - not enough parts
+2025-05-10 20:07:05,830 - WARNING - Line 760: Invalid format - not enough parts
+2025-05-10 20:07:05,830 - WARNING - Line 761: Invalid format - not enough parts
+2025-05-10 20:07:05,881 - WARNING - Line 763: Invalid format - not enough parts
+2025-05-10 20:07:05,881 - WARNING - Line 764: Invalid format - not enough parts
+2025-05-10 20:07:05,932 - WARNING - Line 766: Invalid format - not enough parts
+2025-05-10 20:07:06,184 - WARNING - Line 772: Invalid format - not enough parts
+2025-05-10 20:07:06,438 - WARNING - Line 778: Invalid format - not enough parts
+2025-05-10 20:07:06,642 - WARNING - Line 783: Invalid format - not enough parts
+2025-05-10 20:07:06,948 - WARNING - Line 790: Invalid format - not enough parts
+2025-05-10 20:07:06,999 - WARNING - Line 792: Invalid format - not enough parts
+2025-05-10 20:07:07,404 - WARNING - Line 801: Invalid format - not enough parts
+2025-05-10 20:07:07,405 - WARNING - Line 802: Invalid format - not enough parts
+2025-05-10 20:07:07,455 - WARNING - Line 804: Invalid format - not enough parts
+2025-05-10 20:07:23,667 - WARNING - Line 841: Invalid format - not enough parts
+2025-05-10 20:07:23,668 - WARNING - Line 842: Invalid format - not enough parts
+2025-05-10 20:07:24,016 - WARNING - Line 845: Invalid format - not enough parts
+2025-05-10 20:07:27,540 - WARNING - Line 868: Invalid format - not enough parts
+2025-05-10 20:07:27,540 - WARNING - Line 869: Invalid format - not enough parts
+2025-05-10 20:07:27,788 - WARNING - Line 871: Invalid format - not enough parts
+2025-05-10 20:07:27,789 - WARNING - Line 872: Invalid format - not enough parts
+2025-05-10 20:07:27,789 - WARNING - Line 873: Invalid format - not enough parts
+2025-05-10 20:07:27,938 - WARNING - Line 875: Invalid format - not enough parts
+2025-05-10 20:07:28,934 - WARNING - Line 880: Invalid format - not enough parts
+2025-05-10 20:07:28,935 - WARNING - Line 881: Invalid format - not enough parts
+2025-05-10 20:07:28,935 - WARNING - Line 882: Invalid format - not enough parts
+2025-05-10 20:07:28,935 - WARNING - Line 883: Invalid format - not enough parts
+2025-05-10 20:07:28,935 - WARNING - Line 884: Invalid format - not enough parts
+2025-05-10 20:07:28,935 - WARNING - Line 885: Invalid format - not enough parts
+2025-05-10 20:07:28,936 - WARNING - Line 886: Invalid format - not enough parts
+2025-05-10 20:07:29,035 - WARNING - Line 888: Invalid format - not enough parts
+2025-05-10 20:07:29,185 - WARNING - Line 891: Invalid format - not enough parts
+2025-05-10 20:07:29,686 - WARNING - Line 897: Invalid format - not enough parts
+2025-05-10 20:07:29,885 - WARNING - Line 900: Invalid format - not enough parts
+2025-05-10 20:07:29,985 - WARNING - Line 902: Invalid format - not enough parts
+2025-05-10 20:07:30,286 - WARNING - Line 905: Invalid format - not enough parts
+2025-05-10 20:07:30,287 - WARNING - Line 906: Invalid format - not enough parts
+2025-05-10 20:07:30,287 - WARNING - Line 907: Invalid format - not enough parts
+2025-05-10 20:07:30,541 - WARNING - Line 910: Invalid format - not enough parts
+2025-05-10 20:07:30,693 - WARNING - Line 912: Invalid format - not enough parts
+2025-05-10 20:07:31,891 - WARNING - Line 920: Invalid format - not enough parts
+2025-05-10 20:07:36,450 - WARNING - Line 950: Invalid format - not enough parts
+2025-05-10 20:07:39,705 - WARNING - Line 971: Invalid format - not enough parts
+2025-05-10 20:07:39,906 - WARNING - Line 973: Invalid format - not enough parts
+2025-05-10 20:07:40,406 - WARNING - Line 979: Invalid format - not enough parts
+2025-05-10 20:07:40,406 - WARNING - Line 980: Invalid format - not enough parts
+2025-05-10 20:07:40,805 - WARNING - Line 984: Invalid format - not enough parts
+2025-05-10 20:07:40,806 - WARNING - Line 985: Invalid format - not enough parts
+2025-05-10 20:07:40,906 - WARNING - Line 987: Invalid format - not enough parts
+2025-05-10 20:07:41,405 - WARNING - Line 993: Invalid format - not enough parts
+2025-05-10 20:07:41,405 - WARNING - Line 994: Invalid format - not enough parts
+2025-05-10 20:07:41,605 - WARNING - Line 997: Invalid format - not enough parts
+2025-05-10 20:07:41,606 - WARNING - Line 998: Invalid format - not enough parts
+2025-05-10 20:07:41,606 - WARNING - Line 999: Invalid format - not enough parts
+2025-05-10 20:07:41,707 - INFO - Progress: 1000 lines processed
+2025-05-10 20:07:41,707 - INFO - - Products found: 2653
+2025-05-10 20:07:41,707 - INFO - - Attributes inserted: 2935
+2025-05-10 20:07:41,707 - INFO - - Errors: 0
+2025-05-10 20:07:42,008 - WARNING - Line 1003: Invalid format - not enough parts
+2025-05-10 20:07:42,805 - WARNING - Line 1006: Invalid format - not enough parts
+2025-05-10 20:07:42,805 - WARNING - Line 1007: Invalid format - not enough parts
+2025-05-10 20:07:42,805 - WARNING - Line 1008: Invalid format - not enough parts
+2025-05-10 20:07:43,702 - WARNING - Line 1015: Invalid format - not enough parts
+2025-05-10 20:07:43,703 - WARNING - Line 1016: Invalid format - not enough parts
+2025-05-10 20:07:43,803 - WARNING - Line 1018: Invalid format - not enough parts
+2025-05-10 20:07:47,322 - WARNING - Line 1042: Invalid format - not enough parts
+2025-05-10 20:07:48,523 - WARNING - Line 1051: Invalid format - not enough parts
+2025-05-10 20:07:50,622 - WARNING - Line 1066: Invalid format - not enough parts
+2025-05-10 20:07:51,179 - WARNING - Line 1071: Invalid format - not enough parts
+2025-05-10 20:07:51,179 - WARNING - Line 1072: Invalid format - not enough parts
+2025-05-10 20:07:51,179 - WARNING - Line 1073: Invalid format - not enough parts
+2025-05-10 20:07:51,179 - WARNING - Line 1074: Invalid format - not enough parts
+2025-05-10 20:07:51,179 - WARNING - Line 1075: Invalid format - not enough parts
+2025-05-10 20:07:51,179 - WARNING - Line 1076: Invalid format - not enough parts
+2025-05-10 20:07:51,279 - WARNING - Line 1078: Invalid format - not enough parts
+2025-05-10 20:07:52,030 - WARNING - Line 1085: Invalid format - not enough parts
+2025-05-10 20:07:54,234 - INFO - Progress: 1100 lines processed
+2025-05-10 20:07:54,234 - INFO - - Products found: 2772
+2025-05-10 20:07:54,234 - INFO - - Attributes inserted: 3102
+2025-05-10 20:07:54,234 - INFO - - Errors: 0
+2025-05-10 20:07:54,435 - WARNING - Line 1103: Invalid format - not enough parts
+2025-05-10 20:07:55,585 - WARNING - Line 1113: Invalid format - not enough parts
+2025-05-10 20:07:55,786 - WARNING - Line 1116: Invalid format - not enough parts
+2025-05-10 20:07:56,091 - WARNING - Line 1120: Invalid format - not enough parts
+2025-05-10 20:07:56,091 - WARNING - Line 1121: Invalid format - not enough parts
+2025-05-10 20:07:56,091 - WARNING - Line 1122: Invalid format - not enough parts
+2025-05-10 20:07:56,558 - WARNING - Line 1127: Invalid format - not enough parts
+2025-05-10 20:07:56,660 - WARNING - Line 1129: Invalid format - not enough parts
+2025-05-10 20:07:56,661 - WARNING - Line 1130: Invalid format - not enough parts
+2025-05-10 20:07:57,497 - WARNING - Line 1138: Invalid format - not enough parts
+2025-05-10 20:07:57,497 - WARNING - Line 1139: Invalid format - not enough parts
+2025-05-10 20:07:57,498 - WARNING - Line 1140: Invalid format - not enough parts
+2025-05-10 20:07:57,498 - WARNING - Line 1141: Invalid format - not enough parts
+2025-05-10 20:07:57,498 - WARNING - Line 1142: Invalid format - not enough parts
+2025-05-10 20:07:58,947 - WARNING - Line 1156: Invalid format - not enough parts
+2025-05-10 20:07:59,348 - WARNING - Line 1160: Invalid format - not enough parts
+2025-05-10 20:07:59,996 - WARNING - Line 1166: Invalid format - not enough parts
+2025-05-10 20:08:01,551 - WARNING - Line 1181: Invalid format - not enough parts
+2025-05-10 20:08:01,552 - WARNING - Line 1182: Invalid format - not enough parts
+2025-05-10 20:08:02,552 - WARNING - Line 1192: Invalid format - not enough parts
+2025-05-10 20:08:02,553 - WARNING - Line 1193: Invalid format - not enough parts
+2025-05-10 20:08:03,407 - INFO - Progress: 1200 lines processed
+2025-05-10 20:08:03,407 - INFO - - Products found: 2856
+2025-05-10 20:08:03,407 - INFO - - Attributes inserted: 3204
+2025-05-10 20:08:03,407 - INFO - - Errors: 0
+2025-05-10 20:08:07,126 - WARNING - Line 1232: Invalid format - not enough parts
+2025-05-10 20:08:09,457 - WARNING - Line 1251: Invalid format - not enough parts
+2025-05-10 20:08:16,384 - INFO - Progress: 1300 lines processed
+2025-05-10 20:08:16,385 - INFO - - Products found: 2958
+2025-05-10 20:08:16,385 - INFO - - Attributes inserted: 3363
+2025-05-10 20:08:16,385 - INFO - - Errors: 0
+2025-05-10 20:08:31,670 - WARNING - Line 1387: Invalid format - not enough parts
+2025-05-10 20:08:31,671 - WARNING - Line 1388: Invalid format - not enough parts
+2025-05-10 20:08:31,671 - WARNING - Line 1389: Invalid format - not enough parts
+2025-05-10 20:08:31,671 - WARNING - Line 1390: Invalid format - not enough parts
+2025-05-10 20:08:31,672 - WARNING - Line 1391: Invalid format - not enough parts
+2025-05-10 20:08:31,672 - WARNING - Line 1392: Invalid format - not enough parts
+2025-05-10 20:08:31,672 - WARNING - Line 1393: Invalid format - not enough parts
+2025-05-10 20:08:32,921 - INFO - Progress: 1400 lines processed
+2025-05-10 20:08:32,922 - INFO - - Products found: 3162
+2025-05-10 20:08:32,922 - INFO - - Attributes inserted: 3598
+2025-05-10 20:08:32,922 - INFO - - Errors: 0
+2025-05-10 20:08:34,832 - WARNING - Line 1415: Invalid format - not enough parts
+2025-05-10 20:08:35,432 - WARNING - Line 1421: Invalid format - not enough parts
+2025-05-10 20:08:45,883 - WARNING - Line 1493: Invalid format - not enough parts
+2025-05-10 20:08:46,482 - WARNING - Line 1497: Invalid format - not enough parts
+2025-05-10 20:08:46,582 - WARNING - Line 1499: Invalid format - not enough parts
+2025-05-10 20:08:46,582 - WARNING - Line 1500: Invalid format - not enough parts
+2025-05-10 20:08:48,086 - WARNING - Line 1507: Invalid format - not enough parts
+2025-05-10 20:08:56,152 - WARNING - Line 1559: Invalid format - not enough parts
+2025-05-10 20:08:56,152 - WARNING - Line 1560: Invalid format - not enough parts
+2025-05-10 20:08:56,253 - WARNING - Line 1562: Invalid format - not enough parts
+2025-05-10 20:08:56,955 - WARNING - Line 1569: Invalid format - not enough parts
+2025-05-10 20:08:57,105 - WARNING - Line 1571: Invalid format - not enough parts
+2025-05-10 20:09:03,575 - INFO - Progress: 1600 lines processed
+2025-05-10 20:09:03,575 - INFO - - Products found: 3503
+2025-05-10 20:09:03,575 - INFO - - Attributes inserted: 4012
+2025-05-10 20:09:03,576 - INFO - - Errors: 0
+2025-05-10 20:09:12,504 - WARNING - Line 1659: Invalid format - not enough parts
+2025-05-10 20:09:19,122 - INFO - Progress: 1700 lines processed
+2025-05-10 20:09:19,123 - INFO - - Products found: 3663
+2025-05-10 20:09:19,124 - INFO - - Attributes inserted: 4222
+2025-05-10 20:09:19,124 - INFO - - Errors: 0
+2025-05-10 20:09:23,843 - WARNING - Line 1733: Invalid format - not enough parts
+2025-05-10 20:09:24,043 - WARNING - Line 1736: Invalid format - not enough parts
+2025-05-10 20:09:24,442 - WARNING - Line 1740: Invalid format - not enough parts
+2025-05-10 20:09:27,104 - WARNING - Line 1761: Invalid format - not enough parts
+2025-05-10 20:09:29,208 - WARNING - Line 1780: Invalid format - not enough parts
+2025-05-10 20:09:31,923 - INFO - Progress: 1800 lines processed
+2025-05-10 20:09:31,924 - INFO - - Products found: 3787
+2025-05-10 20:09:31,924 - INFO - - Attributes inserted: 4381
+2025-05-10 20:09:31,924 - INFO - - Errors: 0
+2025-05-10 20:09:35,525 - WARNING - Line 1827: Invalid format - not enough parts
+2025-05-10 20:09:35,676 - WARNING - Line 1829: Invalid format - not enough parts
+2025-05-10 20:09:36,728 - WARNING - Line 1840: Invalid format - not enough parts
+2025-05-10 20:09:36,729 - WARNING - Line 1841: Invalid format - not enough parts
+2025-05-10 20:09:40,646 - WARNING - Line 1870: Invalid format - not enough parts
+2025-05-10 20:09:45,773 - INFO - Progress: 1900 lines processed
+2025-05-10 20:09:45,774 - INFO - - Products found: 3952
+2025-05-10 20:09:45,775 - INFO - - Attributes inserted: 4562
+2025-05-10 20:09:45,775 - INFO - - Errors: 0
+2025-05-10 20:09:47,526 - WARNING - Line 1918: Invalid format - not enough parts
+2025-05-10 20:09:50,619 - WARNING - Line 1939: Invalid format - not enough parts
+2025-05-10 20:09:50,969 - WARNING - Line 1943: Invalid format - not enough parts
+2025-05-10 20:09:58,311 - WARNING - Line 1998: Invalid format - not enough parts
+2025-05-10 20:09:58,614 - INFO - Progress: 2000 lines processed
+2025-05-10 20:09:58,614 - INFO - - Products found: 4053
+2025-05-10 20:09:58,614 - INFO - - Attributes inserted: 4716
+2025-05-10 20:09:58,614 - INFO - - Errors: 0
+2025-05-10 20:10:06,925 - WARNING - Line 2059: Invalid format - not enough parts
+2025-05-10 20:10:10,484 - WARNING - Line 2085: Invalid format - not enough parts
+2025-05-10 20:10:10,934 - WARNING - Line 2090: Invalid format - not enough parts
+2025-05-10 20:10:11,987 - INFO - Progress: 2100 lines processed
+2025-05-10 20:10:11,987 - INFO - - Products found: 4168
+2025-05-10 20:10:11,987 - INFO - - Attributes inserted: 4885
+2025-05-10 20:10:11,987 - INFO - - Errors: 0
+2025-05-10 20:10:15,483 - WARNING - Line 2128: Invalid format - not enough parts
+2025-05-10 20:10:25,008 - INFO - Progress: 2200 lines processed
+2025-05-10 20:10:25,008 - INFO - - Products found: 4287
+2025-05-10 20:10:25,009 - INFO - - Attributes inserted: 5043
+2025-05-10 20:10:25,009 - INFO - - Errors: 0
+2025-05-10 20:10:25,709 - INFO - 
+Processing completed. Statistics:
+2025-05-10 20:10:25,709 - INFO - - Total lines processed: 2205
+2025-05-10 20:10:25,709 - INFO - - Products found: 4294
+2025-05-10 20:10:25,710 - INFO - - Attributes inserted: 5051
+2025-05-10 20:10:25,710 - INFO - - Errors: 0
+2025-05-10 20:10:25,710 - INFO - 
+Verifying results...
+2025-05-10 20:10:25,760 - INFO - Total attribute values in database: 5051
+2025-05-10 20:10:25,811 - INFO - Process completed successfully

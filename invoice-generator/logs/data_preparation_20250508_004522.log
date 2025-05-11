@@ -1,0 +1,66 @@
+2025-05-08 00:45:22,625 - INFO - Starting data preparation process
+2025-05-08 00:45:22,657 - INFO - Database connection established
+2025-05-08 00:45:23,572 - INFO - Connected to PostgreSQL: ('PostgreSQL 17.4 (Ubuntu 17.4-1.pgdg24.04+2) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit',)
+2025-05-08 00:45:23,574 - INFO - Starting to read product list from /Users/alexbozhko/CursorProject/GenSynthData/GenSynthData/invoice-generator/data/anonymized/productList.txt
+2025-05-08 00:45:23,577 - INFO - Finished reading product list:
+2025-05-08 00:45:23,577 - INFO - - Total lines processed: 206
+2025-05-08 00:45:23,577 - INFO - - Valid products found: 206
+2025-05-08 00:45:23,577 - INFO - - Invalid lines: 0
+2025-05-08 00:45:23,577 - INFO - Loaded 206 multilingual product types
+2025-05-08 00:45:23,577 - INFO - Starting product types update process
+2025-05-08 00:45:23,688 - INFO - Total records in producttypes table: 203
+2025-05-08 00:45:23,688 - INFO - Starting records update...
+2025-05-08 00:45:23,736 - INFO - 
+Example update (record 25):
+2025-05-08 00:45:23,736 - INFO - Original base_name: Aluminum Foil
+2025-05-08 00:45:23,736 - INFO - Added translations:
+2025-05-08 00:45:23,736 - INFO - - French:    Ouvre-pots
+2025-05-08 00:45:23,736 - INFO - - German:    Gläseröffner
+2025-05-08 00:45:23,736 - INFO - - Italian:   Aprivasi
+2025-05-08 00:45:23,736 - INFO - - Ukrainian: Відкривачка для банок
+2025-05-08 00:45:23,785 - INFO - 
+Example update (record 26):
+2025-05-08 00:45:23,785 - INFO - Original base_name: Serving Tray
+2025-05-08 00:45:23,785 - INFO - Added translations:
+2025-05-08 00:45:23,785 - INFO - - French:    Bac d'égouttement
+2025-05-08 00:45:23,785 - INFO - - German:    Tropfschale
+2025-05-08 00:45:23,785 - INFO - - Italian:   Leccarda
+2025-05-08 00:45:23,785 - INFO - - Ukrainian: Піддон для збору жиру
+2025-05-08 00:45:23,834 - INFO - 
+Example update (record 27):
+2025-05-08 00:45:23,834 - INFO - Original base_name: Sponge Holder
+2025-05-08 00:45:23,834 - INFO - Added translations:
+2025-05-08 00:45:23,834 - INFO - - French:    Poubelle (cuisine)
+2025-05-08 00:45:23,834 - INFO - - German:    Mülleimer (Küche)
+2025-05-08 00:45:23,834 - INFO - - Italian:   Pattumiera (cucina)
+2025-05-08 00:45:23,834 - INFO - - Ukrainian: Сміттєвий бак (кухня)
+2025-05-08 00:45:23,883 - INFO - 
+Example update (record 28):
+2025-05-08 00:45:23,883 - INFO - Original base_name: Trash Bag (Kitchen)
+2025-05-08 00:45:23,884 - INFO - Added translations:
+2025-05-08 00:45:23,884 - INFO - - French:    Chiffon de nettoyage
+2025-05-08 00:45:23,884 - INFO - - German:    Reinigungstuch
+2025-05-08 00:45:23,884 - INFO - - Italian:   Panno per pulizia
+2025-05-08 00:45:23,884 - INFO - - Ukrainian: Серветка для прибирання>
+2025-05-08 00:45:23,932 - INFO - 
+Example update (record 29):
+2025-05-08 00:45:23,932 - INFO - Original base_name: Food Storage Container
+2025-05-08 00:45:23,932 - INFO - Added translations:
+2025-05-08 00:45:23,932 - INFO - - French:    Cuillère à biscuits
+2025-05-08 00:45:23,932 - INFO - - German:    Keksteigportionierer
+2025-05-08 00:45:23,932 - INFO - - Italian:   Dosatore per biscotti
+2025-05-08 00:45:23,932 - INFO - - Ukrainian: Ложка для печива
+2025-05-08 00:45:26,201 - INFO - Progress: 50/203 records updated (24.6%)
+2025-05-08 00:45:28,738 - INFO - Progress: 100/203 records updated (49.3%)
+2025-05-08 00:45:31,311 - INFO - Progress: 150/203 records updated (73.9%)
+2025-05-08 00:45:33,753 - INFO - Progress: 200/203 records updated (98.5%)
+2025-05-08 00:45:33,899 - INFO - 
+Update completed. Statistics:
+2025-05-08 00:45:33,899 - INFO - - Total records processed: 203
+2025-05-08 00:45:33,899 - INFO - - Successfully updated: 203
+2025-05-08 00:45:33,899 - INFO - - Skipped: 0
+2025-05-08 00:45:33,899 - INFO - - Errors: 0
+2025-05-08 00:45:33,900 - INFO - 
+Verifying updates...
+2025-05-08 00:45:33,948 - INFO - Records with all languages filled: 203/203
+2025-05-08 00:45:33,998 - INFO - Data preparation process completed successfully

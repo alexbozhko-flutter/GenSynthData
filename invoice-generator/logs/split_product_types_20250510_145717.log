@@ -1,0 +1,32 @@
+2025-05-10 14:57:17,667 - INFO - Starting file splitting process
+2025-05-10 14:57:17,668 - INFO - Total lines in input file: 2205
+2025-05-10 14:57:17,668 - INFO - Lines per part: 552
+2025-05-10 14:57:17,668 - INFO - Created part 1: /Users/alexbozhko/CursorProject/GenSynthData/GenSynthData/invoice-generator/data/split/product_types_part_1.txt
+2025-05-10 14:57:17,668 - INFO - Lines in part 1: 552
+2025-05-10 14:57:17,669 - INFO - First 3 lines of part 1:
+2025-05-10 14:57:17,669 - INFO - 25::Фоторамка 13*18 см
+2025-05-10 14:57:17,669 - INFO - 26::Фоторамка 12.7 см
+2025-05-10 14:57:17,669 - INFO - 27::Салатниця
+2025-05-10 14:57:17,669 - INFO - --------------------------------------------------
+2025-05-10 14:57:17,669 - INFO - Created part 2: /Users/alexbozhko/CursorProject/GenSynthData/GenSynthData/invoice-generator/data/split/product_types_part_2.txt
+2025-05-10 14:57:17,669 - INFO - Lines in part 2: 552
+2025-05-10 14:57:17,669 - INFO - First 3 lines of part 2:
+2025-05-10 14:57:17,669 - INFO - 829::Тарілка 19 см
+2025-05-10 14:57:17,669 - INFO - 830::Тарілка 26 см
+2025-05-10 14:57:17,669 - INFO - 831::Тарілка 18 см
+2025-05-10 14:57:17,669 - INFO - --------------------------------------------------
+2025-05-10 14:57:17,670 - INFO - Created part 3: /Users/alexbozhko/CursorProject/GenSynthData/GenSynthData/invoice-generator/data/split/product_types_part_3.txt
+2025-05-10 14:57:17,670 - INFO - Lines in part 3: 552
+2025-05-10 14:57:17,670 - INFO - First 3 lines of part 3:
+2025-05-10 14:57:17,670 - INFO - 1451::Набір ложок для чаю 6 пр.
+2025-05-10 14:57:17,670 - INFO - 1452::Ложка сервувальна 16 см
+2025-05-10 14:57:17,670 - INFO - 1453::Ложка сервувальна 25 см
+2025-05-10 14:57:17,670 - INFO - --------------------------------------------------
+2025-05-10 14:57:17,670 - INFO - Created part 4: /Users/alexbozhko/CursorProject/GenSynthData/GenSynthData/invoice-generator/data/split/product_types_part_4.txt
+2025-05-10 14:57:17,670 - INFO - Lines in part 4: 549
+2025-05-10 14:57:17,670 - INFO - First 3 lines of part 4:
+2025-05-10 14:57:17,670 - INFO - 2028::Свічник Ялинка 20*17 см
+2025-05-10 14:57:17,670 - INFO - 2029::Свічник Музична шкатулка 21*16 см
+2025-05-10 14:57:17,670 - INFO - 2030::Кулька новорічна
+2025-05-10 14:57:17,670 - INFO - --------------------------------------------------
+2025-05-10 14:57:17,670 - INFO - File splitting completed successfully

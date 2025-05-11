@@ -1,0 +1,24 @@
+2025-05-10 18:47:49,182 - INFO - Starting attribute names extraction and insertion process
+2025-05-10 18:47:49,213 - INFO - Database connection established
+2025-05-10 18:47:50,270 - INFO - Connected to PostgreSQL: ('PostgreSQL 17.4 (Ubuntu 17.4-1.pgdg24.04+2) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit',)
+2025-05-10 18:47:50,271 - INFO - Starting to extract attribute names from /Users/alexbozhko/CursorProject/GenSynthData/GenSynthData/invoice-generator/data/product_types_separated.txt
+2025-05-10 18:47:50,277 - INFO - Finished extracting attribute names:
+2025-05-10 18:47:50,278 - INFO - - Total lines processed: 2205
+2025-05-10 18:47:50,278 - INFO - - Unique attribute names found: 10
+2025-05-10 18:47:50,278 - INFO - Extracted 10 unique attribute names
+2025-05-10 18:47:50,278 - INFO - Starting attribute names insertion process
+2025-05-10 18:47:50,379 - INFO - Inserted attribute: Колір
+2025-05-10 18:47:50,478 - INFO - Inserted attribute: Комплектація
+2025-05-10 18:47:50,576 - INFO - Inserted attribute: Кількість
+2025-05-10 18:47:50,676 - INFO - Inserted attribute: Матеріал
+2025-05-10 18:47:50,775 - INFO - Inserted attribute: Модель
+2025-05-10 18:47:51,271 - INFO - 
+Insertion completed. Statistics:
+2025-05-10 18:47:51,271 - INFO - - Total attributes to process: 10
+2025-05-10 18:47:51,271 - INFO - - Successfully inserted: 10
+2025-05-10 18:47:51,271 - INFO - - Skipped (already exist): 0
+2025-05-10 18:47:51,271 - INFO - - Errors: 0
+2025-05-10 18:47:51,271 - INFO - 
+Verifying results...
+2025-05-10 18:47:51,321 - INFO - Total attributes in database: 10
+2025-05-10 18:47:51,372 - INFO - Process completed successfully
