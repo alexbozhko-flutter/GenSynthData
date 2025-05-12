@@ -1,3 +1,9 @@
+# Игнорируем папку с примерами
+data/sample/
+
+# Игнорируем сгенерированные файлы
+data/output/
+
 # Python
 __pycache__/
 *.py[cod]
@@ -37,7 +43,9 @@ ENV/
 config/database.ini
 data/base/*
 data/anonymized/*
-data/output/*
 !data/base/.gitkeep
 !data/anonymized/.gitkeep
-!data/output/.gitkeep 
+
+# OS
+.DS_Store
+Thumbs.db 

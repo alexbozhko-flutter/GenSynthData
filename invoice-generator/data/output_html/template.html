@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feiler Invoice</title>
+    <link rel="stylesheet" href="{{CSS_PATH}}">
+</head>
+<body>
+    <!-- Первая страница -->
+    <div class="page first-page">
+        <!-- Логотип -->
+        <div class="logo-section">
+            <img src="{{LOGO_PATH}}" alt="Feiler Logo" class="logo">
+        </div>
+
+        <!-- Основная информация -->
+        <div class="main-content">
+            <!-- Левая колонка -->
+            <div class="left-column">
+                <div class="sender-address underline small-text">
+                    {{SENDER}}
+                </div>
+                <div class="customer-address">
+                    {{CUSTOMER_FULL_ADDRESS_HTML}}
+                </div>
+            </div>
+
+            <!-- Правая колонка -->
+            <div class="right-column">
+                <div class="invoice-title">Invoice</div>
+                <div class="invoice-details">
+                    <table>
+                        <tr>
+                            <td class="label">Date:</td>
+                            <td class="value">{{DATE}}</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Your Customer No.:</td>
+                            <td class="value">{{CUSTOMER_NO}}</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Invoice-No.:</td>
+                            <td class="value bold">{{INVOICE_NO}}</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Order:</td>
+                            <td class="value">{{ORDER}}</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Agent:</td>
+                            <td class="value">{{AGENT}}</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Seller:</td>
+                            <td class="value">{{SELLER}}</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Contact:</td>
+                            <td class="value">{{CONTACT}}</td>
+                        </tr>
+                    </table>
+                    <div class="page-number">Page 1 fr. {{TOTAL_PAGES}}</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Информация о доставке -->
+        <div class="shipping-info">
+            <div class="ship-to">
+                <span class="underline bold">Ship to:</span>
+            </div>
+            <div class="shipping-address">
+                {{SHIPPING_ADDRESS_HTML}}
+            </div>
+            <div class="additional-info">
+                <div class="vat-info underline small-text">{{VAT_INFO}}</div>
+                <div class="correspondence small-text">{{CORRESPONDENCE}}</div>
+                <div class="delivery-note small-text">{{DELIVERY_NOTE}}</div>
+            </div>
+        </div>
+
+        <!-- Таблица товаров -->
+        <div class="products-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="pos">Pos.</th>
+                        <th class="design">Design</th>
+                        <th class="size">Size</th>
+                        <th class="color">Color</th>
+                        <th class="quantity">Quantity</th>
+                        <th class="qu">QU</th>
+                        <th class="price">Price</th>
+                        <th class="amount">Amount<br>(EUR)</th>
+                    </tr>
+                </thead>
+                <tbody class="first-page-products">
+                    {{FIRST_PAGE_PRODUCTS}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Последующие страницы -->
+    {{SUBSEQUENT_PAGES}}
+</body>
+</html> 
