@@ -1,0 +1,23 @@
+[147] pebble
+[227] breeze
+[144] safari
+[146-113] seashell-coral
+[146] seashell
+[130-124] powder-old rose
+[32] offwhite
+[petrol-marine] petrol-navyblue
+[stahlgrau-silber] steel grey-silver
+[221-212] navy blue grey
+[221-212] navy blue - grey
+[225] blackblue
+[010] black
+[055] lavender
+[124] old rose
+[202] light blue
+[120] red
+[071] tender lilac
+[180] reed green
+[214] platin grey
+[215] slate grey
+[105] yellow
+[012] white 

@@ -257,11 +257,14 @@ alter table warehousestate
 
 create table product_attributes
 (
-    id             serial
+    id                 serial
         primary key,
-    attribute_name varchar(100) not null
+    attribute_name     varchar(100) not null,
+    attribute_name_ukr varchar(100)
 )
     using ???;
+
+comment on column product_attributes.attribute_name_ukr is 'Украинский перевод названия атрибута';
 
 alter table product_attributes
     owner to latest;

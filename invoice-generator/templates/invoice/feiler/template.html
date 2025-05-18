@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feiler Invoice</title>
+    <style>
+        @font-face {
+            font-family: 'Arial';
+            src: local('Arial');
+        }
+        
+        @page {
+            size: A4;
+            margin: 1.5cm 2cm 2cm 2cm;
+            @bottom-right {
+                content: "Page " counter(page) " fr. " counter(pages);
+                font-size: 7pt;
+                color: #666666;
+                margin-top: 1cm;
+            }
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 9pt;
+            line-height: 1.2;
+            color: #000000;
+        }
+        
+        .header {
+            text-align: right;
+            margin-bottom: 25px;
+        }
+        
+        .header img {
+            width: 120px;
+            height: auto;
+        }
+        
+        .address-block {
+            margin-bottom: 35px;
+        }
+        
+        .sender-address {
+            font-size: 7pt;
+            margin-bottom: 20px;
+            border-bottom: 0.5px solid #666666;
+            padding-bottom: 2px;
+            color: #666666;
+        }
+        
+        .recipient-address {
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+        
+        .invoice-details {
+            margin-bottom: 35px;
+        }
+        
+        .invoice-title {
+            font-size: 14pt;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .details-table {
+            width: 100%;
+            margin-bottom: 25px;
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+        
+        .details-table td {
+            padding: 3px 8px 3px 0;
+            border: none;
+            vertical-align: top;
+        }
+        
+        .details-table td:first-child {
+            width: 120px;
+            color: #666666;
+            font-size: 8.5pt;
+        }
+        
+        .items-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+            font-size: 8.5pt;
+        }
+        
+        .items-table th {
+            background-color: #f8f8f8;
+            border-bottom: 0.5px solid #666666;
+            border-top: 0.5px solid #666666;
+            padding: 5px 3px;
+            text-align: left;
+            font-weight: normal;
+            color: #666666;
+            white-space: nowrap;
+        }
+        
+        .items-table td {
+            padding: 2px 3px;
+            vertical-align: top;
+            border: none;
+        }
+        
+        .items-table td.color-cell {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        /* Стиль для первой строки каждой позиции */
+        .items-table tr:nth-child(3n+1) td {
+            font-weight: 900;  /* Максимальная жирность */
+        }
+        
+        .items-table th:nth-child(1) { width: 4%; }   /* Pos. */
+        .items-table th:nth-child(2) { width: 35%; }  /* Design */
+        .items-table th:nth-child(3) { width: 12%; }  /* Size */
+        .items-table th:nth-child(4) { width: 15%; }  /* Color */
+        .items-table th:nth-child(5) { width: 12%; }  /* Quantity QU */
+        .items-table th:nth-child(6) { width: 10%; }  /* Price */
+        .items-table th:nth-child(7) { width: 12%; }  /* Amount */
+        
+        .amount-column {
+            text-align: right;
+        }
+        
+        .total-row td {
+            border-top: 0.5px solid #666666;
+            border-bottom: none !important;
+            padding-top: 8px !important;
+            font-weight: bold;
+        }
+        
+        .article-no {
+            font-size: 7.5pt;
+            color: #666666;
+            padding-left: 0;
+            line-height: 1.1;
+        }
+        
+        .hs-code {
+            font-size: 7.5pt;
+            color: #666666;
+            padding-left: 0;
+            line-height: 1.1;
+        }
+        
+        .tax-info {
+            margin: 15px 0;
+            font-size: 8pt;
+            color: #666666;
+        }
+        
+        .correspondence {
+            margin: 12px 0;
+            font-size: 8pt;
+        }
+        
+        .delivery-note {
+            margin: 12px 0;
+            font-size: 8pt;
+        }
+        
+        .page-break {
+            page-break-after: always;
+        }
+        
+        .continuation-header {
+            font-size: 8pt;
+            color: #666666;
+            margin-bottom: 15px;
+        }
+        
+        /* Убираем нижнюю границу для последней строки каждой позиции */
+        .hs-code-row td {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    {% if show_header %}
+    <div class="header">
+        <img src="{{logo_path}}" alt="Feiler Logo">
+    </div>
+
+    <div class="address-block">
+        <div class="sender-address">
+            Ernst Feiler GmbH - Postfach 28 - D-95691 Hohenberg/Eger
+        </div>
+        <div class="recipient-address">
+            {{recipient_name}}<br>
+            {{recipient_street}}<br>
+            {{recipient_postal_code}} {{recipient_city}}<br>
+            {{recipient_country}}
+        </div>
+    </div>
+
+    <div class="invoice-details">
+        <div class="invoice-title">Invoice</div>
+        <table class="details-table">
+            <tr>
+                <td>Date</td>
+                <td>{{invoice_date}}</td>
+            </tr>
+            <tr>
+                <td>Your Customer No.</td>
+                <td>{{customer_number}}</td>
+            </tr>
+            <tr>
+                <td>Invoice-No.</td>
+                <td>{{invoice_number}}</td>
+            </tr>
+            <tr>
+                <td>Seller</td>
+                <td>{{seller}}</td>
+            </tr>
+            <tr>
+                <td>Contact</td>
+                <td>{{contact}}</td>
+            </tr>
+            <tr>
+                <td>Agent</td>
+                <td>{{agent}}</td>
+            </tr>
+            <tr>
+                <td>Order</td>
+                <td>{{order}}</td>
+            </tr>
+        </table>
+    </div>
+    {% else %}
+    <div class="continuation-header">
+        Invoice No. {{invoice_number}} - Continuation
+    </div>
+    {% endif %}
+
+    <table class="items-table">
+        <thead>
+            <tr>
+                <th>Pos.</th>
+                <th>Design</th>
+                <th>Size</th>
+                <th>Color</th>
+                <th>Quantity QU</th>
+                <th>Price</th>
+                <th class="amount-column">Amount (EUR)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+            <!-- Первая строка с основной информацией -->
+            <tr>
+                <td>{{item.position}}</td>
+                <td>{{item.design}}</td>
+                <td>{{item.size}}</td>
+                <td class="color-cell">{{item.color}}</td>
+                <td>{{item.quantity}}</td>
+                <td>{{item.price}}</td>
+                <td class="amount-column">{{item.amount}}</td>
+            </tr>
+            <!-- Вторая строка с артикулом и цветом -->
+            <tr>
+                <td></td>
+                <td class="article-no">Article No.: {{item.article_no}}</td>
+                <td></td>
+                <td class="article-no color-cell">{{item.color_name}}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- Третья строка с HS-Code -->
+            <tr class="hs-code-row">
+                <td></td>
+                <td colspan="6" class="hs-code">{{item.hs_code}}</td>
+            </tr>
+            {% if not loop.last and loop.index % 20 == 0 %}
+            </tbody>
+    </table>
+    <div class="page-break"></div>
+    <table class="items-table">
+        <thead>
+            <tr>
+                <th>Pos.</th>
+                <th>Design</th>
+                <th>Size</th>
+                <th>Color</th>
+                <th>Quantity QU</th>
+                <th>Price</th>
+                <th class="amount-column">Amount (EUR)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% endif %}
+            {% endfor %}
+            {% if total_amount %}
+            <tr class="total-row">
+                <td colspan="6" style="text-align: right">Total Amount:</td>
+                <td class="amount-column">{{total_amount}}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    </table>
+
+    {% if show_footer %}
+    <div class="tax-info">
+        Tax free exports to third countries pursuant to § 4(1a) i.c.w. § 6 German VAT Act.
+    </div>
+
+    <div class="correspondence">
+        Your Correspondence Number {{correspondence_number}} dated {{correspondence_date}} placed by {{correspondence_person}}
+    </div>
+
+    <div class="delivery-note">
+        Delivery Note No. {{delivery_note_number}}, Delivery Date {{delivery_date}}
+    </div>
+    {% endif %}
+</body>
+</html> 
