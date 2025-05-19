@@ -1,0 +1,88 @@
+{
+  "invoice": {
+    "invoice_date": "19.07.2023",
+    "invoice_number": "5060015",
+    "customer_number": "29068",
+    "seller": "Emanuel Baur Retail",
+    "contact": "Anna Schulz",
+    "agent": "49120",
+    "order": "2069362",
+    "sender_company": "Ernst Feiler GmbH - Postfach 28 - D-95691 Hohenberg/Eger",
+    "recipient_name": "Textile Design Studio",
+    "recipient_street": "Nezalezhnosti Street 200",
+    "recipient_postal_code": "43000",
+    "recipient_city": "LUTSK",
+    "recipient_country": "UKRAINE",
+    "show_shipping": true,
+    "shipping_info": {
+      "correspondence_number": "17-2024",
+      "correspondence_date": "18.09.2024",
+      "correspondence_person": "Andriy Kovalchuk",
+      "delivery_note_number": "4059973",
+      "delivery_date": "26.09.2024"
+    },
+    "items": [
+      {
+        "position": 1,
+        "design": "WASCHHANDSCHUH BRILLIANT",
+        "size": "16/21",
+        "color": "WEISS",
+        "quantity": 100,
+        "price": 2.95,
+        "amount": 295.0,
+        "article_no": "WH1621BR",
+        "color_name": "White",
+        "hs_code": "HS Code: 6302.60.00"
+      },
+      {
+        "position": 2,
+        "design": "HANDTUCH SELECTION",
+        "size": "50/100",
+        "color": "HELLBLAU",
+        "quantity": 50,
+        "price": 12.5,
+        "amount": 625.0,
+        "article_no": "HT50100SE",
+        "color_name": "Light Blue",
+        "hs_code": "HS Code: 6302.60.00"
+      },
+      {
+        "position": 3,
+        "design": "DUSCHTUCH SELECTION",
+        "size": "70/140",
+        "color": "ROSA",
+        "quantity": 30,
+        "price": 22.95,
+        "amount": 688.5,
+        "article_no": "DT70140SE",
+        "color_name": "Pink",
+        "hs_code": "HS Code: 6302.60.00"
+      },
+      {
+        "position": 4,
+        "design": "SAUNATUCH BRILLIANT",
+        "size": "80/200",
+        "color": "MARINE",
+        "quantity": 25,
+        "price": 39.95,
+        "amount": 998.75,
+        "article_no": "ST80200BR",
+        "color_name": "Navy Blue",
+        "hs_code": "HS Code: 6302.60.00"
+      },
+      {
+        "position": 5,
+        "design": "GÄSTETUCH SELECTION",
+        "size": "30/50",
+        "color": "GRAU",
+        "quantity": 75,
+        "price": 5.95,
+        "amount": 446.25,
+        "article_no": "GT3050SE",
+        "color_name": "Grey",
+        "hs_code": "HS Code: 6302.60.00"
+      }
+    ],
+    "total_amount": "3053.50"
+  }
+}

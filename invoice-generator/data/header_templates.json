@@ -1,0 +1,274 @@
+{
+    "templates": [
+        {
+            "sender": {
+                "company": "Ernst Feiler GmbH - Postfach 28 - D-95691 Hohenberg/Eger",
+                "recipient": {
+                    "name": "Home Sweet Home",
+                    "street": "Perekopskaya Street 123",
+                    "postal_code": "73022",
+                    "city": "KHERSON",
+                    "country": "UKRAINE"
+                }
+            },
+            "invoice_details": {
+                "customer_number": "29060",
+                "invoice_number": "5060007",
+                "seller": "Emanuel Baur Asien/Drittland",
+                "contact": "Anja König",
+                "agent": "49112",
+                "order": "2069354"
+            },
+            "shipping_info": {
+                "correspondence_number": "09-2024",
+                "correspondence_date": "10.09.2024",
+                "correspondence_person": "Tatjana Parygin",
+                "delivery_note_number": "4059965",
+                "delivery_date": "18.09.2024"
+            }
+        },
+        {
+            "sender": {
+                "company": "Ernst Feiler GmbH - Postfach 28 - D-95691 Hohenberg/Eger",
+                "recipient": {
+                    "name": "Textile Paradise",
+                    "street": "Soborna Avenue 45",
+                    "postal_code": "49000",
+                    "city": "DNIPRO",
+                    "country": "UKRAINE"
+                }
+            },
+            "invoice_details": {
+                "customer_number": "29061",
+                "invoice_number": "5060008",
+                "seller": "Emanuel Baur Europa",
+                "contact": "Maria Schmidt",
+                "agent": "49113",
+                "order": "2069355"
+            },
+            "shipping_info": {
+                "correspondence_number": "10-2024",
+                "correspondence_date": "11.09.2024",
+                "correspondence_person": "Olena Kovalenko",
+                "delivery_note_number": "4059966",
+                "delivery_date": "19.09.2024"
+            }
+        },
+        {
+            "sender": {
+                "company": "Ernst Feiler GmbH - Postfach 28 - D-95691 Hohenberg/Eger",
+                "recipient": {
+                    "name": "Comfort & Style",
+                    "street": "Derybasivska Street 78",
+                    "postal_code": "65000",
+                    "city": "ODESSA",
+                    "country": "UKRAINE"
+                }
+            },
+            "invoice_details": {
+                "customer_number": "29062",
+                "invoice_number": "5060009",
+                "seller": "Emanuel Baur International",
+                "contact": "Thomas Weber",
+                "agent": "49114",
+                "order": "2069356"
+            },
+            "shipping_info": {
+                "correspondence_number": "11-2024",
+                "correspondence_date": "12.09.2024",
+                "correspondence_person": "Iryna Shevchenko",
+                "delivery_note_number": "4059967",
+                "delivery_date": "20.09.2024"
+            }
+        },
+        {
+            "sender": {
+                "company": "Ernst Feiler GmbH - Postfach 28 - D-95691 Hohenberg/Eger",
+                "recipient": {
+                    "name": "Luxury Home Textiles",
+                    "street": "Svobody Avenue 25",
+                    "postal_code": "79000",
+                    "city": "LVIV",
+                    "country": "UKRAINE"
+                }
+            },
+            "invoice_details": {
+                "customer_number": "29063",
+                "invoice_number": "5060010",
+                "seller": "Emanuel Baur Export",
+                "contact": "Lisa Müller",
+                "agent": "49115",
+                "order": "2069357"
+            },
+            "shipping_info": {
+                "correspondence_number": "12-2024",
+                "correspondence_date": "13.09.2024",
+                "correspondence_person": "Mykola Bondarenko",
+                "delivery_note_number": "4059968",
+                "delivery_date": "21.09.2024"
+            }
+        },
+        {
+            "sender": {
+                "company": "Ernst Feiler GmbH - Postfach 28 - D-95691 Hohenberg/Eger",
+                "recipient": {
+                    "name": "Elite Textiles",
+                    "street": "Khreshchatyk Street 100",
+                    "postal_code": "01001",
+                    "city": "KYIV",
+                    "country": "UKRAINE"
+                }
+            },
+            "invoice_details": {
+                "customer_number": "29064",
+                "invoice_number": "5060011",
+                "seller": "Emanuel Baur GmbH",
+                "contact": "Peter Wagner",
+                "agent": "49116",
+                "order": "2069358"
+            },
+            "shipping_info": {
+                "correspondence_number": "13-2024",
+                "correspondence_date": "14.09.2024",
+                "correspondence_person": "Oleksandr Melnyk",
+                "delivery_note_number": "4059969",
+                "delivery_date": "22.09.2024"
+            }
+        },
+        {
+            "sender": {
+                "company": "Ernst Feiler GmbH - Postfach 28 - D-95691 Hohenberg/Eger",
+                "recipient": {
+                    "name": "Royal Textile House",
+                    "street": "Pushkinska Street 55",
+                    "postal_code": "61000",
+                    "city": "KHARKIV",
+                    "country": "UKRAINE"
+                }
+            },
+            "invoice_details": {
+                "customer_number": "29065",
+                "invoice_number": "5060012",
+                "seller": "Emanuel Baur & Co.",
+                "contact": "Sarah Fischer",
+                "agent": "49117",
+                "order": "2069359"
+            },
+            "shipping_info": {
+                "correspondence_number": "14-2024",
+                "correspondence_date": "15.09.2024",
+                "correspondence_person": "Natalia Kravchuk",
+                "delivery_note_number": "4059970",
+                "delivery_date": "23.09.2024"
+            }
+        },
+        {
+            "sender": {
+                "company": "Ernst Feiler GmbH - Postfach 28 - D-95691 Hohenberg/Eger",
+                "recipient": {
+                    "name": "Premium Textiles",
+                    "street": "Myru Avenue 150",
+                    "postal_code": "69000",
+                    "city": "ZAPORIZHZHIA",
+                    "country": "UKRAINE"
+                }
+            },
+            "invoice_details": {
+                "customer_number": "29066",
+                "invoice_number": "5060013",
+                "seller": "Emanuel Baur Trading",
+                "contact": "Julia Becker",
+                "agent": "49118",
+                "order": "2069360"
+            },
+            "shipping_info": {
+                "correspondence_number": "15-2024",
+                "correspondence_date": "16.09.2024",
+                "correspondence_person": "Vasyl Tkachenko",
+                "delivery_note_number": "4059971",
+                "delivery_date": "24.09.2024"
+            }
+        },
+        {
+            "sender": {
+                "company": "Ernst Feiler GmbH - Postfach 28 - D-95691 Hohenberg/Eger",
+                "recipient": {
+                    "name": "Modern Home Textiles",
+                    "street": "Sobornyi Avenue 80",
+                    "postal_code": "58000",
+                    "city": "CHERNIVTSI",
+                    "country": "UKRAINE"
+                }
+            },
+            "invoice_details": {
+                "customer_number": "29067",
+                "invoice_number": "5060014",
+                "seller": "Emanuel Baur Wholesale",
+                "contact": "Michael Hoffmann",
+                "agent": "49119",
+                "order": "2069361"
+            },
+            "shipping_info": {
+                "correspondence_number": "16-2024",
+                "correspondence_date": "17.09.2024",
+                "correspondence_person": "Yulia Savchenko",
+                "delivery_note_number": "4059972",
+                "delivery_date": "25.09.2024"
+            }
+        },
+        {
+            "sender": {
+                "company": "Ernst Feiler GmbH - Postfach 28 - D-95691 Hohenberg/Eger",
+                "recipient": {
+                    "name": "Textile Design Studio",
+                    "street": "Nezalezhnosti Street 200",
+                    "postal_code": "43000",
+                    "city": "LUTSK",
+                    "country": "UKRAINE"
+                }
+            },
+            "invoice_details": {
+                "customer_number": "29068",
+                "invoice_number": "5060015",
+                "seller": "Emanuel Baur Retail",
+                "contact": "Anna Schulz",
+                "agent": "49120",
+                "order": "2069362"
+            },
+            "shipping_info": {
+                "correspondence_number": "17-2024",
+                "correspondence_date": "18.09.2024",
+                "correspondence_person": "Andriy Kovalchuk",
+                "delivery_note_number": "4059973",
+                "delivery_date": "26.09.2024"
+            }
+        },
+        {
+            "sender": {
+                "company": "Ernst Feiler GmbH - Postfach 28 - D-95691 Hohenberg/Eger",
+                "recipient": {
+                    "name": "Home & Living",
+                    "street": "Shevchenka Boulevard 15",
+                    "postal_code": "88000",
+                    "city": "UZHHOROD",
+                    "country": "UKRAINE"
+                }
+            },
+            "invoice_details": {
+                "customer_number": "29069",
+                "invoice_number": "5060016",
+                "seller": "Emanuel Baur Distribution",
+                "contact": "Christina Koch",
+                "agent": "49121",
+                "order": "2069363"
+            },
+            "shipping_info": {
+                "correspondence_number": "18-2024",
+                "correspondence_date": "19.09.2024",
+                "correspondence_person": "Maria Lysenko",
+                "delivery_note_number": "4059974",
+                "delivery_date": "27.09.2024"
+            }
+        }
+    ]
+} 

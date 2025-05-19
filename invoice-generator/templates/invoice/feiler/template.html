@@ -30,17 +30,28 @@
         }
         
         .header {
-            text-align: right;
+            display: flex;
+            justify-content: flex-end;
             margin-bottom: 25px;
         }
         
         .header img {
-            width: 120px;
+            width: 150px;
             height: auto;
         }
         
-        .address-block {
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
             margin-bottom: 35px;
+        }
+        
+        .left-column {
+            width: 48%;
+        }
+        
+        .right-column {
+            width: 48%;
         }
         
         .sender-address {
@@ -68,7 +79,6 @@
         
         .details-table {
             width: 100%;
-            margin-bottom: 25px;
             border-spacing: 0;
             border-collapse: collapse;
         }
@@ -83,6 +93,26 @@
             width: 120px;
             color: #666666;
             font-size: 8.5pt;
+        }
+        
+        .shipping-info {
+            margin-top: 20px;
+            margin-bottom: 35px;
+        }
+        
+        .tax-info {
+            margin: 15px 0;
+            font-size: 8pt;
+        }
+        
+        .correspondence {
+            margin: 12px 0;
+            font-size: 8pt;
+        }
+        
+        .delivery-note {
+            margin: 12px 0;
+            font-size: 8pt;
         }
         
         .items-table {
@@ -153,30 +183,8 @@
             line-height: 1.1;
         }
         
-        .tax-info {
-            margin: 15px 0;
-            font-size: 8pt;
-            color: #666666;
-        }
-        
-        .correspondence {
-            margin: 12px 0;
-            font-size: 8pt;
-        }
-        
-        .delivery-note {
-            margin: 12px 0;
-            font-size: 8pt;
-        }
-        
         .page-break {
             page-break-after: always;
-        }
-        
-        .continuation-header {
-            font-size: 8pt;
-            color: #666666;
-            margin-bottom: 15px;
         }
         
         /* Убираем нижнюю границу для последней строки каждой позиции */
@@ -186,59 +194,75 @@
     </style>
 </head>
 <body>
-    {% if show_header %}
     <div class="header">
         <img src="{{logo_path}}" alt="Feiler Logo">
     </div>
 
-    <div class="address-block">
-        <div class="sender-address">
-            Ernst Feiler GmbH - Postfach 28 - D-95691 Hohenberg/Eger
+    <div class="content-wrapper">
+        <div class="left-column">
+            <div class="sender-address">
+                Ernst Feiler GmbH - Postfach 28 - D-95691 Hohenberg/Eger
+            </div>
+            <div class="recipient-address">
+                {{recipient_name}}<br>
+                {{recipient_street}}<br>
+                {{recipient_city}}<br>
+                {{recipient_country}}
+            </div>
         </div>
-        <div class="recipient-address">
-            {{recipient_name}}<br>
-            {{recipient_street}}<br>
-            {{recipient_postal_code}} {{recipient_city}}<br>
-            {{recipient_country}}
+        
+        <div class="right-column">
+            <div class="invoice-title">Invoice</div>
+            <table class="details-table">
+                <tr>
+                    <td>Date</td>
+                    <td>{{date}}</td>
+                </tr>
+                <tr>
+                    <td>Your Customer No.</td>
+                    <td>{{customer_no}}</td>
+                </tr>
+                <tr>
+                    <td>Invoice-No.</td>
+                    <td>{{invoice_no}}</td>
+                </tr>
+                <tr>
+                    <td>Seller</td>
+                    <td>{{seller}}</td>
+                </tr>
+                <tr>
+                    <td>Contact</td>
+                    <td>{{contact}}</td>
+                </tr>
+                <tr>
+                    <td>Agent</td>
+                    <td>{{agent}}</td>
+                </tr>
+                <tr>
+                    <td>Order</td>
+                    <td>{{order}}</td>
+                </tr>
+            </table>
         </div>
     </div>
 
-    <div class="invoice-details">
-        <div class="invoice-title">Invoice</div>
-        <table class="details-table">
-            <tr>
-                <td>Date</td>
-                <td>{{invoice_date}}</td>
-            </tr>
-            <tr>
-                <td>Your Customer No.</td>
-                <td>{{customer_number}}</td>
-            </tr>
-            <tr>
-                <td>Invoice-No.</td>
-                <td>{{invoice_number}}</td>
-            </tr>
-            <tr>
-                <td>Seller</td>
-                <td>{{seller}}</td>
-            </tr>
-            <tr>
-                <td>Contact</td>
-                <td>{{contact}}</td>
-            </tr>
-            <tr>
-                <td>Agent</td>
-                <td>{{agent}}</td>
-            </tr>
-            <tr>
-                <td>Order</td>
-                <td>{{order}}</td>
-            </tr>
-        </table>
-    </div>
-    {% else %}
-    <div class="continuation-header">
-        Invoice No. {{invoice_number}} - Continuation
+    {% if is_first_page %}
+    <div class="shipping-info">
+        <strong>Ship to:</strong><br>
+        {{shipping_name}}<br>
+        {{shipping_street}}<br>
+        {{shipping_city}}<br>
+        {{shipping_country}}<br>
+        <br>
+        <div class="tax-info">
+            Tax free exports to third countries pursuant to § 4(1a) i.c.w. § 6 German VAT Act.
+        </div>
+        <div class="correspondence">
+            Your Correspondence Number {{correspondence_number}} dated {{correspondence_date}} placed by {{correspondence_person}}
+        </div>
+        <div class="delivery-note">
+            Delivery Note No. {{delivery_note}}, Delivery Date {{delivery_date}}
+        </div>
     </div>
     {% endif %}
 
@@ -308,19 +332,5 @@
             {% endif %}
         </tbody>
     </table>
-
-    {% if show_footer %}
-    <div class="tax-info">
-        Tax free exports to third countries pursuant to § 4(1a) i.c.w. § 6 German VAT Act.
-    </div>
-
-    <div class="correspondence">
-        Your Correspondence Number {{correspondence_number}} dated {{correspondence_date}} placed by {{correspondence_person}}
-    </div>
-
-    <div class="delivery-note">
-        Delivery Note No. {{delivery_note_number}}, Delivery Date {{delivery_date}}
-    </div>
-    {% endif %}
 </body>
 </html> 

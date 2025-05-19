@@ -121,9 +121,12 @@ class FeilerInvoiceGenerator:
                 'delivery_date': self.format_date(data.get('delivery_date')) if data.get('delivery_date') else '',
                 'current_page': page_num,
                 'total_pages': total_pages,
-                'show_header': page_num == 1,  # Показывать шапку только на первой странице
-                'show_footer': is_last_page,  # Показывать подвал только на последней странице
-                'is_last_page': is_last_page  # Флаг последней страницы
+                'is_first_page': page_num == 1,  # Флаг первой страницы
+                'is_last_page': is_last_page,  # Флаг последней страницы
+                'shipping_name': data.get('recipient_name'),  # Добавляем данные для shipping info
+                'shipping_street': data.get('recipient_street'),
+                'shipping_city': f"{data.get('recipient_postal_code')} {data.get('recipient_city')}",
+                'shipping_country': data.get('recipient_country')
             }
             
             page_html = self.template.render(**template_data)
