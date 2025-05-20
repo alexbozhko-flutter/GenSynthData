@@ -73,7 +73,18 @@ class FeilerInvoiceGenerator:
         
     def calculate_total(self, items: List[Dict]) -> float:
         """Calculate total amount from items."""
-        return sum(item.get('item_amount', 0.0) for item in items)
+        total = 0.0
+        for item in items:
+            amount_str = str(item.get('amount', '0.0'))
+            # Заменяем запятую на точку для корректного преобразования
+            amount_str = amount_str.replace(',', '.')
+            try:
+                amount = float(amount_str)
+                total += amount
+            except ValueError:
+                print(f"Warning: Could not convert amount '{amount_str}' to float, using 0.0")
+                continue
+        return total
         
     def calculate_pages(self, total_items: int) -> int:
         """Calculate total number of pages needed."""
