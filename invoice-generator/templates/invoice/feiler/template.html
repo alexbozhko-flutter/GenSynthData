@@ -195,7 +195,7 @@
 </head>
 <body>
     <div class="header">
-        <img src="{{logo_path}}" alt="Feiler Logo">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjAwIj4KICA8IS0tIEJ1dHRlcmZseSBzeW1ib2wgLS0+CiAgPHBhdGggZD0iTTE1MCA0MCBDMTMwIDMwLCAxMTAgNTAsIDEzMCA3MCBDMTEwIDkwLCAxMzAgMTEwLCAxNTAgMTAwIEMxNzAgMTEwLCAxOTAgOTAsIDE3MCA3MCBDMTkwIDUwLCAxNzAgMzAsIDE1MCA0MCIgZmlsbD0iI0M1QTU3MiIvPgogIAogIDwhLS0gRkVJTEVSIHRleHQgLS0+CiAgPHRleHQgeD0iNTAiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjQ4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0M1QTU3MiI+RkVJTEVSPC90ZXh0PgogIAogIDwhLS0gR0VSTUFOWSB0ZXh0IC0tPgogIDx0ZXh0IHg9IjkwIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iI0M1QTU3MiI+R0VSTUFOWT48L3RleHQ+Cjwvc3ZnPg==" alt="Feiler Logo" style="width: 200px; height: auto;">
     </div>
 
     <div class="content-wrapper">
@@ -216,15 +216,15 @@
             <table class="details-table">
                 <tr>
                     <td>Date</td>
-                    <td>{{date}}</td>
+                    <td>{{invoice_date}}</td>
                 </tr>
                 <tr>
                     <td>Your Customer No.</td>
-                    <td>{{customer_no}}</td>
+                    <td>{{customer_number}}</td>
                 </tr>
                 <tr>
                     <td>Invoice-No.</td>
-                    <td>{{invoice_no}}</td>
+                    <td>{{invoice_number}}</td>
                 </tr>
                 <tr>
                     <td>Seller</td>
@@ -261,11 +261,12 @@
             Your Correspondence Number {{correspondence_number}} dated {{correspondence_date}} placed by {{correspondence_person}}
         </div>
         <div class="delivery-note">
-            Delivery Note No. {{delivery_note}}, Delivery Date {{delivery_date}}
+            Delivery Note No. {{delivery_note_number}}, Delivery Date {{delivery_date}}
         </div>
     </div>
     {% endif %}
 
+    {% if items %}
     <table class="items-table">
         <thead>
             <tr>
@@ -309,6 +310,57 @@
             </tbody>
     </table>
     <div class="page-break"></div>
+    <div class="header">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjAwIj4KICA8IS0tIEJ1dHRlcmZseSBzeW1ib2wgLS0+CiAgPHBhdGggZD0iTTE1MCA0MCBDMTMwIDMwLCAxMTAgNTAsIDEzMCA3MCBDMTEwIDkwLCAxMzAgMTEwLCAxNTAgMTAwIEMxNzAgMTEwLCAxOTAgOTAsIDE3MCA3MCBDMTkwIDUwLCAxNzAgMzAsIDE1MCA0MCIgZmlsbD0iI0M1QTU3MiIvPgogIAogIDwhLS0gRkVJTEVSIHRleHQgLS0+CiAgPHRleHQgeD0iNTAiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjQ4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0M1QTU3MiI+RkVJTEVSPC90ZXh0PgogIAogIDwhLS0gR0VSTUFOWSB0ZXh0IC0tPgogIDx0ZXh0IHg9IjkwIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iI0M1QTU3MiI+R0VSTUFOWT48L3RleHQ+Cjwvc3ZnPg==" alt="Feiler Logo" style="width: 200px; height: auto;">
+    </div>
+
+    <div class="content-wrapper">
+        <div class="left-column">
+            <div class="sender-address">
+                Ernst Feiler GmbH - Postfach 28 - D-95691 Hohenberg/Eger
+            </div>
+            <div class="recipient-address">
+                {{recipient_name}}<br>
+                {{recipient_street}}<br>
+                {{recipient_city}}<br>
+                {{recipient_country}}
+            </div>
+        </div>
+        
+        <div class="right-column">
+            <div class="invoice-title">Invoice</div>
+            <table class="details-table">
+                <tr>
+                    <td>Date</td>
+                    <td>{{invoice_date}}</td>
+                </tr>
+                <tr>
+                    <td>Your Customer No.</td>
+                    <td>{{customer_number}}</td>
+                </tr>
+                <tr>
+                    <td>Invoice-No.</td>
+                    <td>{{invoice_number}}</td>
+                </tr>
+                <tr>
+                    <td>Seller</td>
+                    <td>{{seller}}</td>
+                </tr>
+                <tr>
+                    <td>Contact</td>
+                    <td>{{contact}}</td>
+                </tr>
+                <tr>
+                    <td>Agent</td>
+                    <td>{{agent}}</td>
+                </tr>
+                <tr>
+                    <td>Order</td>
+                    <td>{{order}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
     <table class="items-table">
         <thead>
             <tr>
@@ -324,13 +376,93 @@
         <tbody>
             {% endif %}
             {% endfor %}
-            {% if total_amount %}
-            <tr class="total-row">
-                <td colspan="6" style="text-align: right">Total Amount:</td>
-                <td class="amount-column">{{total_amount}}</td>
-            </tr>
-            {% endif %}
         </tbody>
     </table>
+    {% endif %}
+
+    {% if total_amount %}
+    <table class="totals-table" style="width: 100%; margin-top: 20px;">
+        <tr class="total-row">
+            <td style="text-align: right; padding-right: 10px;">Value of Goods:</td>
+            <td style="width: 100px; text-align: right;">{{total_amount}}</td>
+        </tr>
+        <tr>
+            <td style="text-align: right; padding-right: 10px;">Transport Charge:</td>
+            <td style="width: 100px; text-align: right;">30,00</td>
+        </tr>
+        <tr>
+            <td style="text-align: right; padding-right: 10px; font-weight: bold;">value of invoice net:</td>
+            <td style="width: 100px; text-align: right;">{{invoice_net}}</td>
+        </tr>
+        <tr>
+            <td style="text-align: right; padding-right: 10px; font-weight: bold;">value of invoice gross / final amount:</td>
+            <td style="width: 100px; text-align: right;">{{invoice_gross}}</td>
+        </tr>
+    </table>
+
+    <div style="margin-top: 30px;">
+        <div style="margin-bottom: 10px;">
+            <strong>Terms of Delivery</strong>
+            <div style="margin-left: 20px;">
+                Post<br>
+                FCA (Free Carrier) as per INCOTERMS 2010
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if is_last_page and not items %}
+    <div class="header">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjAwIj4KICA8IS0tIEJ1dHRlcmZseSBzeW1ib2wgLS0+CiAgPHBhdGggZD0iTTE1MCA0MCBDMTMwIDMwLCAxMTAgNTAsIDEzMCA3MCBDMTEwIDkwLCAxMzAgMTEwLCAxNTAgMTAwIEMxNzAgMTEwLCAxOTAgOTAsIDE3MCA3MCBDMTkwIDUwLCAxNzAgMzAsIDE1MCA0MCIgZmlsbD0iI0M1QTU3MiIvPgogIAogIDwhLS0gRkVJTEVSIHRleHQgLS0+CiAgPHRleHQgeD0iNTAiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjQ4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0M1QTU3MiI+RkVJTEVSPC90ZXh0PgogIAogIDwhLS0gR0VSTUFOWSB0ZXh0IC0tPgogIDx0ZXh0IHg9IjkwIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iI0M1QTU3MiI+R0VSTUFOWT48L3RleHQ+Cjwvc3ZnPg==" alt="Feiler Logo" style="width: 200px; height: auto;">
+    </div>
+
+    <div class="content-wrapper">
+        <div class="left-column">
+            <div class="sender-address">
+                Ernst Feiler GmbH - Postfach 28 - D-95691 Hohenberg/Eger
+            </div>
+            <div class="recipient-address">
+                {{recipient_name}}<br>
+                {{recipient_street}}<br>
+                {{recipient_city}}<br>
+                {{recipient_country}}
+            </div>
+        </div>
+        
+        <div class="right-column">
+            <div class="invoice-title">Invoice</div>
+            <table class="details-table">
+                <tr>
+                    <td>Date</td>
+                    <td>{{invoice_date}}</td>
+                </tr>
+                <tr>
+                    <td>Your Customer No.</td>
+                    <td>{{customer_number}}</td>
+                </tr>
+                <tr>
+                    <td>Invoice-No.</td>
+                    <td>{{invoice_number}}</td>
+                </tr>
+                <tr>
+                    <td>Seller</td>
+                    <td>{{seller}}</td>
+                </tr>
+                <tr>
+                    <td>Contact</td>
+                    <td>{{contact}}</td>
+                </tr>
+                <tr>
+                    <td>Agent</td>
+                    <td>{{agent}}</td>
+                </tr>
+                <tr>
+                    <td>Order</td>
+                    <td>{{order}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    {% endif %}
 </body>
 </html> 

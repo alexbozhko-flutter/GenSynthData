@@ -212,7 +212,7 @@ def prepare_invoice_data(sql_data):
     
     return invoice_data
 
-def generate_invoice_from_sql(invoice_id):
+def generate_invoice_from_sql(invoice_id, anonymize=True):
     """Генерирует инвойс на основе данных из SQL."""
     try:
         # Подключаемся к базе данных
@@ -234,8 +234,8 @@ def generate_invoice_from_sql(invoice_id):
         output_html = os.path.join(output_dir, f'invoice_{invoice_id}.html')
         output_pdf = os.path.join(output_dir, f'invoice_{invoice_id}.pdf')
         
-        # Генерируем инвойс
-        html_path, pdf_path = generator.generate(invoice_data, output_html, output_pdf)
+        # Генерируем инвойс с опцией анонимизации
+        html_path, pdf_path = generator.generate(invoice_data, output_html, output_pdf, anonymize=anonymize)
         
         print(f"\nИнвойс успешно сгенерирован:")
         print(f"HTML: {html_path}")
@@ -251,9 +251,10 @@ def generate_invoice_from_sql(invoice_id):
             conn.close()
 
 if __name__ == '__main__':
-    if len(sys.argv) != 2:
-        print("Использование: python generate_invoice_from_sql.py <invoice_id>")
+    if len(sys.argv) < 2:
+        print("Использование: python generate_invoice_from_sql.py <invoice_id> [--no-anonymize]")
         sys.exit(1)
         
     invoice_id = int(sys.argv[1])
-    generate_invoice_from_sql(invoice_id) 
+    anonymize = "--no-anonymize" not in sys.argv
+    generate_invoice_from_sql(invoice_id, anonymize) 

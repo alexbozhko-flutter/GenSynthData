@@ -1,0 +1,138 @@
+{
+    "companies": [
+        {
+            "name": "Home Sweet Home",
+            "street": "Perekopskaya Street 123",
+            "postal_code": "73022",
+            "city": "KHERSON",
+            "country": "UKRAINE"
+        },
+        {
+            "name": "Comfort & Style GmbH",
+            "street": "Hauptstrasse 45",
+            "postal_code": "80331",
+            "city": "MÜNCHEN",
+            "country": "GERMANY"
+        },
+        {
+            "name": "Textile Trading Ltd.",
+            "street": "Market Square 78",
+            "postal_code": "1010",
+            "city": "WIEN",
+            "country": "AUSTRIA"
+        },
+        {
+            "name": "Royal Home Collection",
+            "street": "King's Road 256",
+            "postal_code": "SW3 5UE",
+            "city": "LONDON",
+            "country": "UNITED KINGDOM"
+        },
+        {
+            "name": "Nordic Interior AB",
+            "street": "Drottninggatan 89",
+            "postal_code": "11136",
+            "city": "STOCKHOLM",
+            "country": "SWEDEN"
+        },
+        {
+            "name": "Maison du Textile SARL",
+            "street": "Rue de la Paix 123",
+            "postal_code": "75002",
+            "city": "PARIS",
+            "country": "FRANCE"
+        },
+        {
+            "name": "Casa Bella SRL",
+            "street": "Via Roma 456",
+            "postal_code": "20121",
+            "city": "MILANO",
+            "country": "ITALY"
+        },
+        {
+            "name": "Textile Plus BV",
+            "street": "Damrak 210",
+            "postal_code": "1012",
+            "city": "AMSTERDAM",
+            "country": "NETHERLANDS"
+        },
+        {
+            "name": "Home & Living AG",
+            "street": "Bahnhofstrasse 92",
+            "postal_code": "8001",
+            "city": "ZÜRICH",
+            "country": "SWITZERLAND"
+        },
+        {
+            "name": "Elegant Home Sp. z o.o.",
+            "street": "Nowy Świat 44",
+            "postal_code": "00-363",
+            "city": "WARSZAWA",
+            "country": "POLAND"
+        }
+    ],
+    "sellers": [
+        {
+            "name": "Emanuel Baur Asien/Drittland",
+            "contact": "Anja König",
+            "agent": "49112"
+        },
+        {
+            "name": "Michael Schmidt Europa",
+            "contact": "Lisa Weber",
+            "agent": "49113"
+        },
+        {
+            "name": "Thomas Müller International",
+            "contact": "Sarah Fischer",
+            "agent": "49114"
+        },
+        {
+            "name": "Christina Wagner Export",
+            "contact": "Mark Peters",
+            "agent": "49115"
+        },
+        {
+            "name": "Andreas Bauer Global",
+            "contact": "Julia Schneider",
+            "agent": "49116"
+        },
+        {
+            "name": "Stefan Richter Vertrieb",
+            "contact": "Laura Krause",
+            "agent": "49117"
+        },
+        {
+            "name": "Maria Hoffmann Trading",
+            "contact": "David Schwarz",
+            "agent": "49118"
+        },
+        {
+            "name": "Robert Klein GmbH",
+            "contact": "Emma Wolf",
+            "agent": "49119"
+        },
+        {
+            "name": "Sabine Meyer Export",
+            "contact": "Felix Becker",
+            "agent": "49120"
+        },
+        {
+            "name": "Klaus Werner International",
+            "contact": "Sophie Schulz",
+            "agent": "49121"
+        }
+    ],
+    "correspondence_persons": [
+        "Tatjana Parygin",
+        "Alexander Müller",
+        "Maria Schmidt",
+        "Thomas Weber",
+        "Anna Fischer",
+        "Michael Wagner",
+        "Christina Bauer",
+        "Stefan Richter",
+        "Julia Hoffmann",
+        "David Klein"
+    ]
+} 
